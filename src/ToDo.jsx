@@ -15,7 +15,9 @@ if(newTodo)
   }
 
    const handleDelete = (index) => {
-    
+    const newTodos = [...todos];
+    newTodos[index].completed = !newTodos[index].completed;
+    setTodos(newTodos)
   }
 
   return (
