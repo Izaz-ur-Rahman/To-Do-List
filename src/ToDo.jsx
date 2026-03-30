@@ -10,7 +10,7 @@ e.preventDefault();
 if(newTodo)
 {
   setTodos([...todos,{text:newTodo, completed:false}])
-  setTodos("");
+  setNewTodo("");
 }
   }
 
@@ -30,7 +30,7 @@ if(newTodo)
         {todos.map((todo,index) => (
           <li key={index}>
             <span>{todo.text}</span>
-            <button onClick={() => handleDelete(index)}></button>
+            <button onClick={() => handleDelete(index)}>Delete</button>
           </li>
         ))}
       </ul>

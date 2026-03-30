@@ -1,4 +1,4 @@
-
+import Todo from "./ToDo"
 
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
   return (
     <>
   
-
+<Todo />
      
     </>
   )
