@@ -31,7 +31,7 @@ if(newTodo)
       <ul>
         {todos.map((todo,index) => (
           <li key={index}>
-            <span>{todo.text}</span>
+            <span style={{ textDecoration : todo.completed ? 'line-through' : "none"  }}>{todo.text}</span>
             <button onClick={() => handleDelete(index)}>Delete</button>
           </li>
         ))}
