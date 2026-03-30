@@ -86,7 +86,7 @@ function ToDo() {
 
         <ul className="todo-list">
           {todos.length === 0 ? (
-            <p className="empty-text">No tasks yet. Add one</p>
+            <p className="empty-text">No tasks yet. Add one 🚀</p>
           ) : (
             todos.map((todo, index) => (
               <li key={index} className="todo-item">
