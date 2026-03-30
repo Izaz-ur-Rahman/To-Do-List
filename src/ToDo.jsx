@@ -6,7 +6,12 @@ function ToDo() {
   const [todos,setTodos] = useState([]);
 
   const handleSubmit = (e) => {
-
+e.preventDefault();
+if(newTodo)
+{
+  setTodos([...todos,{text:newTodo, completed:false}])
+  setTodos("");
+}
   }
 
    const handleDelete = (index) => {
