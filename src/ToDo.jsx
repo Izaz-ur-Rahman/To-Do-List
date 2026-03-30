@@ -24,7 +24,8 @@ function ToDo() {
       <ul>
         {todos.map((todo,index) => (
           <li key={index}>
-            <span></span>
+            <span>{todo.text}</span>
+            <button onClick={() => handleDelete(index)}></button>
           </li>
         ))}
       </ul>
